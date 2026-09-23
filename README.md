@@ -2,7 +2,7 @@
 
 **Turn a photo and a story into a cinematic, motion-realistic short video — and see a cheap preview before you spend a single credit.**
 
-MotionFrame AI is an open-source, motion-focused AI video generation platform built entirely on open models. It is designed to be cost-efficient, preview-first, and built for short-form creators, with a special focus on India.
+MotionFrame AI is a motion-focused AI video generation platform built entirely on open models. It is designed to be cost-efficient, preview-first, and built for short-form creators, with a special focus on India.
 
 > **Status: Early development.** Architecture, model evaluation, and the first proof of concept are in progress. Follow the [Roadmap](#roadmap) to see what is being built.
 
@@ -23,7 +23,6 @@ MotionFrame AI is an open-source, motion-focused AI video generation platform bu
 - [Roadmap](#roadmap)
 - [Responsible AI](#responsible-ai)
 - [Contributing](#contributing)
-- [License](#license)
 - [Author](#author)
 
 ---
@@ -34,7 +33,7 @@ This project is my step from **Applied AI engineering** into **AI Media Engineer
 
 I have built production AI pipelines that compose classification, object detection, and vision-LLM models into orchestrated graphs. Generative video is the next frontier for that same engineering discipline: the models exist, but turning them into a **reliable, affordable, controllable product** is still an unsolved engineering problem.
 
-While creating AI shorts myself using commercial platforms, I repeatedly ran into the same frustration: **paying credits for outputs I could not use**, with no way to know what the model would generate before committing. MotionFrame AI is my attempt to fix that — openly, and with open models.
+While creating AI shorts myself using commercial platforms, I repeatedly ran into the same frustration: **paying credits for outputs I could not use**, with no way to know what the model would generate before committing. MotionFrame AI is my attempt to fix that — built in public, with open models.
 
 ---
 
@@ -385,13 +384,7 @@ This project is in its early stages, and contributions, ideas, and discussions a
 
 Please open an issue to discuss an idea before submitting a large pull request.
 
----
-
-## License
-
-This repository's source code is released under the **Apache License 2.0**.
-
-The open-source models used by this project are **not** covered by this license. Each model is governed by its own license, which must be reviewed separately.
+By submitting a contribution, you agree that it may be used, modified, and licensed by the project owner, including for commercial purposes.
 
 ---
 
