@@ -33,7 +33,7 @@ This project is my step from **Applied AI engineering** into **AI Media Engineer
 
 I have built production AI pipelines that compose classification, object detection, and vision-LLM models into orchestrated graphs. Generative video is the next frontier for that same engineering discipline: the models exist, but turning them into a **reliable, affordable, controllable product** is still an unsolved engineering problem.
 
-While creating AI shorts myself using commercial platforms, I repeatedly ran into the same frustration: **paying credits for outputs I could not use**, with no way to know what the model would generate before committing. MotionFrame AI is my attempt to fix that — built in public, with open models.
+While creating [AI shorts](https://www.youtube.com/@chetanpadhen7780/shorts) myself using commercial platforms, myself using commercial platforms, I repeatedly ran into the same frustration: **paying credits for outputs I could not use**, with no way to know what the model would generate before committing. MotionFrame AI is my attempt to fix that — built in public, with open models.
 
 ---
 
@@ -393,5 +393,6 @@ By submitting a contribution, you agree that it may be used, modified, and licen
 **Chetan Padhen** — Applied AI Engineer moving into AI Media Engineering
 
 - LinkedIn: [chetan-padhen](https://linkedin.com/in/chetan-padhen-501416222)
+- YouTube: [@chetanpadhen7780](https://www.youtube.com/@chetanpadhen7780/shorts)
 
 If this project interests you, give it a star and follow along as it gets built in public.
