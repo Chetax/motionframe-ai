@@ -1,0 +1,69 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---------- Node / frontend ----------
+node_modules/
+dist/
+build/
+.vite/
+*.log
+
+# ---------- Secrets (never commit) ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+
+# ---------- AWS / CDK ----------
+cdk.out/
+cdk.context.json
+.aws-sam/
+
+# ---------- Model weights (live in S3, not git) ----------
+models/
+checkpoints/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.gguf
+*.onnx
+
+# ---------- Generated media ----------
+outputs/
+renders/
+*.mp4
+*.mov
+*.webm
+*.wav
+
+# ---------- Training data ----------
+training/lora/datasets/
+
+# ---------- Benchmark raw results (keep summaries only) ----------
+benchmarks/**/raw/
+
+# ---------- Local databases ----------
+*.db
+*.sqlite3
+
+# ---------- OS / editor ----------
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
