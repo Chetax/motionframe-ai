@@ -388,11 +388,12 @@ By submitting a contribution, you agree that it may be used, modified, and licen
 
 ---
 
-## Author
+## Author 
 
 **Chetan Padhen** — Applied AI Engineer moving into AI Media Engineering
 
 - LinkedIn: [chetan-padhen](https://linkedin.com/in/chetan-padhen-501416222)
 - YouTube: [@chetanpadhen7780](https://www.youtube.com/@chetanpadhen7780/shorts)
+- Instagram: [@vhexwambsgans](https://www.instagram.com/vhexwambsgans/)
 
 If this project interests you, give it a star and follow along as it gets built in public.
