@@ -8,6 +8,19 @@ MotionFrame AI is a motion-focused AI video generation platform built entirely o
 
 ---
 
+## Progress
+
+**Latest:** First cloud generation complete (Sept 2026)
+
+- ✅ Local ComfyUI setup + SDXL Turbo inpainting workflow
+- ✅ AWS GPU provisioning (g4dn.xlarge, Tesla T4)
+- ✅ Wan 2.2 TI2V-5B running end-to-end on cloud GPU
+- ✅ First benchmark data point: T4 baseline
+- 🔄 Next: L4 (g6.xlarge) benchmark + first V2V test
+
+See [`benchmarks/`](benchmarks/) for measured cost and latency, 
+and [`workflows/comfyui/`](workflows/comfyui/) for reproducible pipelines.
+
 ## Table of Contents
 
 - [Motivation](#motivation)
@@ -33,7 +46,7 @@ This project is my step from **Applied AI engineering** into **AI Media Engineer
 
 I have built production AI pipelines that compose classification, object detection, and vision-LLM models into orchestrated graphs. Generative video is the next frontier for that same engineering discipline: the models exist, but turning them into a **reliable, affordable, controllable product** is still an unsolved engineering problem.
 
-While creating [AI shorts](https://www.youtube.com/@chetanpadhen7780/shorts) myself using commercial platforms, myself using commercial platforms, I repeatedly ran into the same frustration: **paying credits for outputs I could not use**, with no way to know what the model would generate before committing. MotionFrame AI is my attempt to fix that — built in public, with open models.
+While creating [AI shorts](https://www.youtube.com/@chetanpadhen7780/shorts) myself using commercial platforms, I repeatedly ran into the same frustration: **paying credits for outputs I could not use**, with no way to know what the model would generate before committing. MotionFrame AI is my attempt to fix that — built in public, with open models.
 
 ---
 
@@ -320,16 +333,24 @@ Cost per usable clip is the most important metric in this project. The strategy:
 5. **No idle GPUs.** Serverless or on-demand GPU workers until traffic justifies reserved capacity.
 6. **Measure everything.** Every model and setting is benchmarked for quality, latency, and cost in the `benchmarks/` folder.
 
-Target numbers will be published here once the first benchmarks are complete.
+### First measured baseline (Sept 2026)
+
+| Setup | Result |
+|---|---|
+| Wan 2.2 TI2V-5B on Tesla T4 | 33m 31s per 2-sec 512×512 clip, ~$0.29/clip |
+| Verdict | Works but too slow for production. Bottleneck: T4 lacks bf16 + modern tensor cores. |
+| Next benchmarks | L4 (g6.xlarge), L40S (g6e.xlarge), + LightX2V-distilled variants |
+
+Full details in [`benchmarks/cost/`](benchmarks/cost/).
 
 ---
 
 ## Roadmap
 
 ### Phase 0 — Proof of Concept
-- [ ] Run Wan 2.2 I2V in ComfyUI on a rented GPU
+- [x] Run Wan 2.2 TI2V-5B in ComfyUI on a rented GPU (T4 baseline, Sept 2026)
 - [ ] Recreate a real photo-to-motion short using only open models
-- [ ] Measure quality, latency, and cost per 5-second clip
+- [ ] Measure quality, latency, and cost per 5-second clip (T4 done, L4/L40S pending)
 
 ### Phase 1 — Motion Control
 - [ ] First-last-frame controlled generation
