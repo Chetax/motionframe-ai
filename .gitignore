@@ -45,7 +45,6 @@ checkpoints/
 # ---------- Generated media ----------
 outputs/
 renders/
-*.mp4
 *.mov
 *.webm
 *.wav
